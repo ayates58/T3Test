@@ -193,8 +193,7 @@ ul.errorlist {
 }
 
 .product-list .item img {
-    width:300px;
-    height:300px;
+    width:100%;
     margin-bottom:8px;
 }
 
@@ -209,8 +208,7 @@ ul.errorlist {
 }
 
 .product-detail img {
-    width:300px;
-    height:300px;
+    width:40%;
     float:left;
     padding:0 20px 20px 0;
 }
@@ -329,10 +327,4 @@ form div.field {
     background:#efefef;
     color:#666;
     border-radius:4px;
-}
-.topleft {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-    font-size: 18px;
 }
