@@ -1,0 +1,34 @@
+{% extends 'shop/base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+   <body>
+    <html>
+            <div class="content container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="links">
+                            <!-- Example row of columns -->
+                            <div class="row">
+
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img src="{% static "img/mav.png" %}" alt="lunch"/>
+                                        <div class="caption">
+                                            <h2>Products</h2>
+                                            <p>Great Products.</p>
+                                            <p><a class="btn btn-primary" href="{% url 'shop:customer_list' %}"
+                                                  role="button">View
+                                                details &raquo;</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+    </html>
+{% endblock %}
