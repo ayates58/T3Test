@@ -43,9 +43,15 @@
     </tbody>
   </table>
   <p class="text-right">
+    {% if user.is_authenticated %}
     <a href="{% url 'shop:product_list' %}" class="button light">Continue shopping</a>
     <a href="{% url 'orders:order_create' %}" class="button">
       Checkout
     </a>
+    {% else %}
+    <li><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+
+    {% endif %}
+
   </p>
 {% endblock %}
